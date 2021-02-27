@@ -19,6 +19,9 @@ function App() {
                     <Slogan/>
                 </Suspense>
                 <Suspense fallback={ <p>Carregando...</p> }>
+                    <Conteudo/>
+                </Suspense> 
+                <Suspense fallback={ <p>Carregando...</p> }>
                     <Rodape/>
                 </Suspense> 
             </header>  
