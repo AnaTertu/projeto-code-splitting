@@ -4,10 +4,11 @@ import logo from './logo.svg';
 import './App.css';
 
 //import Slogan from './components/Slogan';
-//import Rodape from './components/Rodape';
+//import Copyright from './components/Copyright';
 
-const Slogan = React.lazy(() => import('./components/Slogan'));
-const Rodape = React.lazy(() => import('./components/Rodape'));
+const Slogan = lazy(() => import('./components/Slogan'));
+const Conteudo = lazy(() => import('./components/Conteudo'));
+const Copyright = lazy(() => import('./components/Copyright'));
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                     <Conteudo/>
                 </Suspense> 
                 <Suspense fallback={ <p>Carregando...</p> }>
-                    <Rodape/>
+                    <Copyright ano="2021"/>
                 </Suspense> 
             </header>  
         </div>      

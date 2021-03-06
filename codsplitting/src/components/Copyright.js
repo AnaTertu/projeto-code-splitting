@@ -1,4 +1,6 @@
-function Rodape() {
+import React from 'react';
+
+const Copyright = function (props) {
     return (
         <a
           className="App-link"
@@ -7,9 +9,9 @@ function Rodape() {
           rel="noopener noreferrer"
         >
           
-          &copy;github Ana Tertu 2021
+          &copy; Github Ana Tertu {props.ano}
         </a>
-    )
+    );
 }
 
-export default Rodape;
+export default Copyright;
